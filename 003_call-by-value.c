@@ -13,15 +13,16 @@ void call_by_value(int x);
 
 int main(void)
 {
-	int a=10;
+	int a=100;
 	
-	printf("a = %d before function call_by_value.\n", a);
+	printf("\na = %d before call_by_value.\n", a);
 	
 	call_by_value(a);
 	
-	printf("a = %d after function call_by_value.\n", a);
+	printf("\nStill a is unchanged. a = %d after function call_by_value.\n", a);
+	printf("Call by value does not change the original.\n");
 	
-	
+	printf("\n\n");
 	system("pause");
 	return 0;
 }
@@ -29,7 +30,7 @@ int main(void)
 
 void call_by_value(int x)
 {
-	printf("Inside call_by_value x = %d before adding 10.\n", x);
-	x += 10;
-	printf("Inside call_by_value x = %d after adding 10.\n", x);
+	printf("\nInside call_by_value x = %d before adding 50.\n", x);
+	x += 50;
+	printf("\nInside call_by_value x = %d after adding 50.\n", x);
 }
