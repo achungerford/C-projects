@@ -2,7 +2,11 @@
 Call by value - original value is not modified
 				changes made to the parameter inside the function has no effect on the argument
 
-				
+	If data is passed by value, the data is copied from the variable used in main()
+	to a variable used by the function. So if the data passed (that is stored in the function variable)
+	is modified inside the function, the value is only changed in the variable used inside the function.			
+
+
 Call by reference - original value changes
 					changes made to the parameter does affect the argument
 */
