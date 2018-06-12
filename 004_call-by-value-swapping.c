@@ -16,8 +16,8 @@ int main(void)
 	swap(a, b);
 	
 	printf("After swap in main()\n a = %d\n b = %d\n", a, b);
-	printf(" x and y created inside swap() are not accessible to main()\n");
 	printf(" Call by value does not modify the original values\n");
+	printf(" x and y created inside swap() are not accessible to main()\n");
 	
 	
 	printf("\n");
